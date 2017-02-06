@@ -38,7 +38,7 @@ instances:
       #  - gunicorn
       #  - redis
       <% if @service_whitelist and ! @service_whitelist.empty? -%>
-  service_whitelist:
+service_whitelist:
         <%- Array(@service_whitelist).each do |svc| -%>
         <%- if svc != '' -%>
         - <%= svc %>
